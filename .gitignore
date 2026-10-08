@@ -1,0 +1,4 @@
+.DS_Store
+ExternalBrightness.app/
+.ExternalBrightness-install-*.app/
+*.log

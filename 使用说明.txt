@@ -1,0 +1,104 @@
+外接屏亮度（ExternalBrightness）1.1.2
+本机版 · Apple Silicon · 2026-10-08
+
+已安装并运行，默认启用，登录时自动启动。
+辅助功能权限保持有效。
+
+亮度档位
+--------
+最低档位只保留 1%、5%，之后可以继续调到更高亮度。
+0%、2%、3%、4% 已删除。
+普通亮度键、精细快捷键、菜单滑块均遵守这个规则。
+
+100%：显示器硬件最高背光。
+20–100%：从硬件最低背光到最高背光。
+低于 20% 的可用档位：在硬件最低背光上继续软件调暗。
+1%：最暗可见档位，黑色遮罩为 95%；5%：黑色遮罩为 75%。
+显示器仍通电，不会进入待机。
+
+软件档位和硬件背光百分比不同：1%、5% 都使用显示器最低硬件背光。
+删除的是扩展范围中的 0% 全黑档位，硬件背光读回仍可能为 0。
+软件百分比不代表功耗百分比；两档实际功耗没有用功耗仪测量。
+
+使用
+----
+按 MX Keys 上两个太阳图标的按键调节亮度，可长按。
+减键：从更亮的档位先到 5%，再按直接到 1%。
+在 1% 继续按减键，保持 1%。增键从 1% 直接到 5%。
+高于 5% 的普通调节步长约为 6%。
+Shift + Option + 亮度键：较高区间每次约 1%，最低区间只在 1%、5% 切换。
+备用调光快捷键：Control + Option + ↑ / ↓。
+恢复最高亮度：Control + Option + Command + ↑。
+菜单栏太阳图标内也有“恢复亮度”按钮和亮度滑块。
+
+滑块左端为 1%，拖过 1% 和 5% 之间时会吸附到其中一个档位。
+命令入口拒绝设置 0%、2%、3%、4%。
+退出、暂停键盘控制、失去按键权限或切换到登录界面时，会解除软件调暗。
+菜单可以关闭登录自启、暂停键盘控制。
+
+如果 MX Keys 只发送普通 F1/F2，在菜单中启用“F1 / F2 同时用于亮度”，
+或用 Fn + Esc 切换 Fn 锁。
+
+安装、编译与卸载
+--------------
+本机已经更新到 1.1.2，无需再次安装。
+install.command：安装或更新，启用登录启动。
+build.command：使用本机 Xcode/Swift 从 Source 编译。
+uninstall.command：卸载程序及登录启动项，保留偏好与诊断文件。
+脚本可双击运行，也可用 bash 执行。
+
+权限位置：系统设置 → 隐私与安全性 → 辅助功能 →
+外接屏亮度（ExternalBrightness）。
+
+本机验证
+--------
+Mac mini（M2），macOS 27.0.1，LG ULTRAFINE，MX Keys。
+43 项按键解析、范围与档位规则检查通过。
+15 项运行检查通过，覆盖：
+- 新版默认启用，辅助功能授权、键盘监听和登录自启有效。
+- 普通按键从 5% 直接到 1%，反向从 1% 直接到 5%。
+- 在 1% 连续按减键，仍保持 1%。
+- 精细快捷键也跳过已删除的档位。
+- 较高亮度步长继续有效。
+- 1%、5% 的真实窗口遮罩和硬件背光读回符合设定，光标可见。
+- 命令入口拒绝 0%、2%、3%、4%。
+
+本次测试结束时已恢复测试前的扩展亮度 24%（硬件背光 5%）。
+没有执行菜单滑块的实际鼠标拖动测试；其共用档位规则已通过范围检查。
+其他显示器、物理拔插、睡眠唤醒和其他应用全屏空间未在本次测试。
+Carbon 备用热键已注册；关闭事件监听后的旧版合成按键测试未触发，
+不将该独立路线列为已验证。启用键盘监听时的恢复快捷键此前已验证。
+
+源码与接口
+----------
+Source/ScreenDimming.swift：档位规则、软件调暗窗口。
+Source/App.swift：菜单、滑块、按键和调光队列。
+Source/Hardware.swift：DisplayServices / Apple Silicon DDC/CI 硬件背光。
+Source/Keys.swift：键盘事件过滤。
+Source/EmergencyRestore.swift：恢复快捷键。
+Source/LaunchAtLogin.swift：登录启动。
+Source/HUD.swift：调光提示。
+Source/main.swift：入口、诊断与测试。
+
+软件调暗不修改系统 ColorSync / Night Shift gamma 表。
+程序不联网，不保存普通键盘输入。
+接口和调暗方案参考 MonitorControl，许可见 THIRD_PARTY_NOTICES.txt：
+https://github.com/MonitorControl/MonitorControl
+
+高级命令
+--------
+程序路径：~/Applications/ExternalBrightness.app/Contents/MacOS/ExternalBrightness
+
+--status          查看扩展亮度与真实硬件背光
+--set-visual 1     设置最低档位 1%
+--set-visual 5     设置 5%
+--set-visual 50    设置 50%（可接受 5–100% 的其他值）
+--restore         恢复到 100%
+--diagnose        读取硬件接口和背光
+--set 0...100     直接设置硬件背光，不控制软件档位
+--self-test       按键、范围及档位检查
+--hardware-test   小幅修改硬件背光、读回并恢复
+
+诊断：~/Library/Application Support/ExternalBrightness/status.json
+启动：~/Library/LaunchAgents/local.ychen.ExternalBrightness.plist
+日志：~/Library/Logs/ExternalBrightness/

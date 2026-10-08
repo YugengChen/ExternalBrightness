@@ -1,0 +1,954 @@
+{
+  "version": "1.1.2",
+  "verifiedAt": "2026-10-08T18:37:02.938673+00:00",
+  "binarySHA256": "4802fc48c3be968eb93756032285f856dc53909d88c0d00865254db9e7e3a56b",
+  "minimumVisualPercent": 1,
+  "lowBrightnessPresetsPercent": [
+    1,
+    5
+  ],
+  "removedVisualPercent": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "parserAndRangeChecksPassed": 43,
+  "lowBrightnessKeyboardIntegration": {
+    "version": "1.1.2",
+    "originalVisualPercent": 24,
+    "checks": [
+      {
+        "test": "updated app retains keyboard permission and login launch",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 24,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 5,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 0,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 0,
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:34Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 0,
+          "version": "1.1.2"
+        }
+      },
+      {
+        "test": "ordinary brightness down reaches 5% after 1 press(es)",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 5,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 75,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 1,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:39Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:39Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.75,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:39Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 2,
+          "version": "1.1.2"
+        }
+      },
+      {
+        "test": "ordinary brightness down reaches 1% after 1 press(es)",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 1,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 95,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 2,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:39Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:40Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.95,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:40Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 3,
+          "version": "1.1.2"
+        }
+      },
+      {
+        "test": "ordinary brightness down reaches 1% after 8 press(es)",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 1,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 95,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 10,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:40Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:41Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.95,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:41Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 6,
+          "version": "1.1.2"
+        }
+      },
+      {
+        "test": "ordinary brightness up reaches 5% after 1 press(es)",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 5,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 75,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 11,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:41Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:41Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.75,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:41Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 7,
+          "version": "1.1.2"
+        }
+      },
+      {
+        "test": "fine brightness down reaches 1% after 1 press(es)",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 1,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 95,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 12,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:41Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:41Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.95,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:41Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 8,
+          "version": "1.1.2"
+        }
+      },
+      {
+        "test": "fine brightness up reaches 5% after 1 press(es)",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 5,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 75,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 13,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:42Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.75,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:42Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 9,
+          "version": "1.1.2"
+        }
+      },
+      {
+        "test": "ordinary brightness up reaches 11.25% after 1 press(es)",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 11.25,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 43.75,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 14,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:42Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.4375,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:42Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 10,
+          "version": "1.1.2"
+        }
+      },
+      {
+        "test": "ordinary brightness down reaches 5% after 1 press(es)",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 5,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 75,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 15,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:43Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.75,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:43Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 11,
+          "version": "1.1.2"
+        }
+      },
+      {
+        "test": "1% preset remains visible with correct software shade",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 1,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 95,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 15,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:43Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.95,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:43Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 12,
+          "version": "1.1.2"
+        },
+        "actualWindow": {
+          "kCGWindowAlpha": 0.949999988079071,
+          "kCGWindowBounds": {
+            "Height": 1296,
+            "Width": 2304,
+            "X": 0,
+            "Y": 0
+          },
+          "kCGWindowIsOnscreen": true,
+          "kCGWindowLayer": 2147483628,
+          "kCGWindowMemoryUsage": 2432,
+          "kCGWindowName": "ExternalBrightness Dimmer 1",
+          "kCGWindowNumber": 785,
+          "kCGWindowOwnerName": "外接屏亮度",
+          "kCGWindowOwnerPID": 15144,
+          "kCGWindowSharingState": 1,
+          "kCGWindowStoreType": 1
+        }
+      },
+      {
+        "test": "5% preset remains visible with correct software shade",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 5,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 75,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 15,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:43Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.75,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:43Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 13,
+          "version": "1.1.2"
+        },
+        "actualWindow": {
+          "kCGWindowAlpha": 0.75,
+          "kCGWindowBounds": {
+            "Height": 1296,
+            "Width": 2304,
+            "X": 0,
+            "Y": 0
+          },
+          "kCGWindowIsOnscreen": true,
+          "kCGWindowLayer": 2147483628,
+          "kCGWindowMemoryUsage": 2432,
+          "kCGWindowName": "ExternalBrightness Dimmer 1",
+          "kCGWindowNumber": 785,
+          "kCGWindowOwnerName": "外接屏亮度",
+          "kCGWindowOwnerPID": 15144,
+          "kCGWindowSharingState": 1,
+          "kCGWindowStoreType": 1
+        }
+      },
+      {
+        "test": "visual command rejects deleted 0% preset",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 5,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 75,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 15,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:43Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.75,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:43Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 13,
+          "version": "1.1.2"
+        },
+        "exitCode": 2
+      },
+      {
+        "test": "visual command rejects deleted 2% preset",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 5,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 75,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 15,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:43Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.75,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:43Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 13,
+          "version": "1.1.2"
+        },
+        "exitCode": 2
+      },
+      {
+        "test": "visual command rejects deleted 3% preset",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 5,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 75,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 15,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:43Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.75,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:43Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 13,
+          "version": "1.1.2"
+        },
+        "exitCode": 2
+      },
+      {
+        "test": "visual command rejects deleted 4% preset",
+        "passed": true,
+        "status": {
+          "accessibilityTrusted": true,
+          "app": "ExternalBrightness",
+          "displays": [
+            {
+              "backend": "DDC/CI",
+              "blackedOut": false,
+              "brightnessPercent": 5,
+              "brightnessVerified": true,
+              "hardwareBrightnessPercent": 0,
+              "id": 1,
+              "name": "LG ULTRAFINE",
+              "softwareDimmingPercent": 75,
+              "supported": true
+            }
+          ],
+          "emergencyRestoreCount": 0,
+          "emergencyShortcutReady": true,
+          "enabled": true,
+          "hardwareBusy": false,
+          "keyboardListening": true,
+          "keyPressCount": 15,
+          "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+          "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:43Z",
+          "launchAtLogin": true,
+          "pendingHardwareWrites": 0,
+          "pid": 15144,
+          "softwareDimming": {
+            "activeWindows": [
+              {
+                "displayID": 1,
+                "frame": {
+                  "height": 1296,
+                  "width": 2304,
+                  "x": 0,
+                  "y": 0
+                },
+                "ignoresMouseEvents": true,
+                "opacity": 0.75,
+                "visible": true,
+                "windowLevel": 2147483628,
+                "windowNumber": 785
+              }
+            ],
+            "cursorHideRequested": false
+          },
+          "updatedAt": "2026-10-08T18:34:43Z",
+          "useFunctionKeys": false,
+          "verifiedHardwareWriteCount": 13,
+          "version": "1.1.2"
+        },
+        "exitCode": 2
+      }
+    ],
+    "passed": true,
+    "restored": {
+      "accessibilityTrusted": true,
+      "app": "ExternalBrightness",
+      "displays": [
+        {
+          "backend": "DDC/CI",
+          "blackedOut": false,
+          "brightnessPercent": 24,
+          "brightnessVerified": true,
+          "hardwareBrightnessPercent": 5,
+          "id": 1,
+          "name": "LG ULTRAFINE",
+          "softwareDimmingPercent": 0,
+          "supported": true
+        }
+      ],
+      "emergencyRestoreCount": 0,
+      "emergencyShortcutReady": true,
+      "enabled": true,
+      "hardwareBusy": false,
+      "keyboardListening": true,
+      "keyPressCount": 15,
+      "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+      "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:44Z",
+      "launchAtLogin": true,
+      "pendingHardwareWrites": 0,
+      "pid": 15144,
+      "softwareDimming": {
+        "activeWindows": [],
+        "cursorHideRequested": false
+      },
+      "updatedAt": "2026-10-08T18:34:44Z",
+      "useFunctionKeys": false,
+      "verifiedHardwareWriteCount": 14,
+      "version": "1.1.2"
+    },
+    "verifiedAtUTC": "2026-10-08T18:34:44Z"
+  },
+  "finalRuntime": {
+    "accessibilityTrusted": true,
+    "app": "ExternalBrightness",
+    "displays": [
+      {
+        "backend": "DDC/CI",
+        "blackedOut": false,
+        "brightnessPercent": 24,
+        "brightnessVerified": true,
+        "hardwareBrightnessPercent": 5,
+        "id": 1,
+        "name": "LG ULTRAFINE",
+        "softwareDimmingPercent": 0,
+        "supported": true
+      }
+    ],
+    "emergencyRestoreCount": 0,
+    "emergencyShortcutReady": true,
+    "enabled": true,
+    "hardwareBusy": false,
+    "keyboardListening": true,
+    "keyPressCount": 15,
+    "lastBrightnessKeyAt": "2026-10-08T18:34:42Z",
+    "lastVerifiedHardwareWriteAt": "2026-10-08T18:34:44Z",
+    "launchAtLogin": true,
+    "pendingHardwareWrites": 0,
+    "pid": 15144,
+    "softwareDimming": {
+      "activeWindows": [],
+      "cursorHideRequested": false
+    },
+    "updatedAt": "2026-10-08T18:36:49Z",
+    "useFunctionKeys": false,
+    "verifiedHardwareWriteCount": 14,
+    "version": "1.1.2"
+  },
+  "remainingPhysicalTests": [
+    "other monitor models",
+    "physical unplug/replug",
+    "sleep/wake",
+    "other-app full-screen Spaces",
+    "physical mouse dragging of menu slider; its shared normalization logic passed self-tests"
+  ],
+  "CarbonWithoutEventTapSyntheticTest": "did not trigger; not claimed as verified",
+  "screenPower": "display remains powered; 1% and 5% use software dimming at the minimum hardware backlight"
+}
